@@ -148,7 +148,7 @@ function getComments(){
     return response.json();
   })
   .then((data) => {
-   console.log(data);
+  //  console.log(data);
    data.reverse();
    document.getElementsByClassName("comments_list")[0].innerHTML=""
    for (let i = 0; i < data.length; i++) {
