@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/admin.css">
+    <link rel="stylesheet" href="./assets/textEditor/style.css">
+    
+
+ <!-- FontAwesome Icons -->
+ <link
+ rel="stylesheet"
+ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+/>
+<!-- Google Fonts -->
+<link
+ href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+ rel="stylesheet"
+/>
+
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bellota:wght@300;400;700&family=Inter:wght@100;200;300;400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,500;1,600&family=Nunito:wght@200;300;400;500;600;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:wght@100;300;400;500;700&family=Rubik+Moonrocks&family=Syne:wght@400..800&family=Zen+Dots&display=swap" rel="stylesheet">
+    <title>Grace:new post</title>
+</head>
+<body>
+    <section class="nav_add">
+       <div class="heading nav_toggle_two">
+        <img src="./assets/image/WEB NAV.png" alt="">
+        <img src="./assets/image/arrow-square-left.png" alt="">
+    </div>
+    <ul>
+        <a href="./admineHome.html"><li>Home</li></a>
+        <a href="#"><li>Sponsored post</li></a>
+        <a href="#"><li>Posts</li></a>
+        <a href="#"><li class="active">New post</li></a>
+    </ul>
+</section>
+<section class="body">
+    
+    
+    
+    <section class="top_nav">
+      <div class="see_nav  nav_toggle">
+        <img src="./assets/image/arrow-square-left.png" alt="">
+    </div>
+            <img src="./assets/image/Grace.png" alt="">
+        </section>
+
+        <section class="main scroll">
+        
+        <section class="form">
+
+
+            <h1>
+                add a new post
+            </h1>
+
+            <label for="title" class="title">
+                <input type="text" id="title" name="title" placeholder="title here">
+                <img src="./assets/image/edit.png" alt="">
+            </label>
+
+            <label for="image" class="image">
+                <div class="input">
+                  <input type="file" id="image" name="image" accept="image/*">
+
+                    <img src="./assets/image/add-circle.png" alt="">
+                </div>
+                <div class="scroll_x">
+                    <ul>
+                    <li></li>
+                    </ul>
+                </div>
+            </label>
+
+            <label for="media" class="media">
+                <img src="./assets/image/add-circle.png" alt="">
+                <input type="file" id="media" name="media" accept="audio/*, video/*">
+
+                <h1>
+                    add an audio or video
+                </h1>
+            </label>
+
+             <section class="edito_cont">
+                <div class="container">
+                    <div class="options">
+                      <!-- Text Format -->
+                      <button id="bold" class="option-button format">
+                        <i class="fa-solid fa-bold"></i>
+                      </button>
+                      <button id="italic" class="option-button format">
+                        <i class="fa-solid fa-italic"></i>
+                      </button>
+                      <button id="underline" class="option-button format">
+                        <i class="fa-solid fa-underline"></i>
+                      </button>
+                      <button id="strikethrough" class="option-button format">
+                        <i class="fa-solid fa-strikethrough"></i>
+                      </button>
+                      <button id="superscript" class="option-button script">
+                        <i class="fa-solid fa-superscript"></i>
+                      </button>
+                      <button id="subscript" class="option-button script">
+                        <i class="fa-solid fa-subscript"></i>
+                      </button>
+              
+                      <!-- List -->
+                      <button id="insertOrderedList" class="option-button">
+                        <div class="fa-solid fa-list-ol"></div>
+                      </button>
+                      <button id="insertUnorderedList" class="option-button">
+                        <i class="fa-solid fa-list"></i>
+                      </button>
+              
+                      <!-- Undo/Redo -->
+                      <button id="undo" class="option-button">
+                        <i class="fa-solid fa-rotate-left"></i>
+                      </button>
+                      <button id="redo" class="option-button">
+                        <i class="fa-solid fa-rotate-right"></i>
+                      </button>
+              
+                      <!-- Link -->
+                      <button id="createLink" class="adv-option-button">
+                        <i class="fa fa-link"></i>
+                      </button>
+                      <button id="unlink" class="option-button">
+                        <i class="fa fa-unlink"></i>
+                      </button>
+              
+                      <!-- Alignment -->
+                      <button id="justifyLeft" class="option-button align">
+                        <i class="fa-solid fa-align-left"></i>
+                      </button>
+                      <button id="justifyCenter" class="option-button align">
+                        <i class="fa-solid fa-align-center"></i>
+                      </button>
+                      <button id="justifyRight" class="option-button align">
+                        <i class="fa-solid fa-align-right"></i>
+                      </button>
+                      <button id="justifyFull" class="option-button align">
+                        <i class="fa-solid fa-align-justify"></i>
+                      </button>
+                      <button id="indent" class="option-button spacing">
+                        <i class="fa-solid fa-indent"></i>
+                      </button>
+                      <button id="outdent" class="option-button spacing">
+                        <i class="fa-solid fa-outdent"></i>
+                      </button>
+              
+                      <!-- Headings -->
+                      <select id="formatBlock" class="adv-option-button">
+                        <option value="H1">H1</option>
+                        <option value="H2">H2</option>
+                        <option value="H3">H3</option>
+                        <option value="H4">H4</option>
+                        <option value="H5">H5</option>
+                        <option value="H6">H6</option>
+                      </select>
+              
+                      <!-- Font -->
+                      <select id="fontName" class="adv-option-button"></select>
+                      <select id="fontSize" class="adv-option-button"></select>
+              
+                      <!-- Color -->
+                      <div class="input-wrapper">
+                        <input type="color" id="foreColor" class="adv-option-button" />
+                        <label for="foreColor">Font Color</label>
+                      </div>
+                      <div class="input-wrapper">
+                        <input type="color" id="backColor" class="adv-option-button" />
+                        <label for="backColor">Highlight Color</label>
+                      </div>
+                    </div>
+                    <div id="text-input" contenteditable="true"></div>
+                  </div>
+             </section>
+
+             <label for="cart" class="cart">
+                <input type="checkbox" id="cart" name="cart">
+                <div class="inti"></div>
+                <h2>
+                    is this a sponsored post?
+                </h2>
+             </label>
+
+             <button class="button_submite">
+                post
+             </button>
+        </section>
+         
+        </section>
+
+
+    </section>
+
+    <script src="./assets/textEditor/script.js"></script>
+    <script src="./assets/js/add_product.js"></script>
+    <script src="./assets/js/navsee.js"></script>
+</body>
+</html>
