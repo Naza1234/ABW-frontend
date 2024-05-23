@@ -295,6 +295,7 @@ function registerUser(params){
 
   //   console.log(data);
     localStorage.setItem("GBWebUserId",data)
+    window.history.pushState({},document.title,"/")
     window.location.reload()
     })
     .catch((error) => {

@@ -439,8 +439,9 @@ function registerUser(params){
 
     //   console.log(data);
       localStorage.setItem("GBWebUserId",data)
-      window.location.reload()
+      window.history.pushState({},document.title,"/")
       document.getElementsByClassName("news-latter")[0].classList.add("hid")
+      window.location.reload()
       })
       .catch((error) => {
         // Handle any errors
