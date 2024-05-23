@@ -149,7 +149,7 @@ function getComments(){
   })
   .then((data) => {
   //  console.log(data);
-   data.reverse();
+  //  data.reverse();
    document.getElementsByClassName("comments_list")[0].innerHTML=""
    for (let i = 0; i < data.length; i++) {
     const element = data[i];
@@ -297,7 +297,7 @@ function registerUser(params){
   if (data != "User not found") {
     localStorage.setItem("GBWebUserId",data)
     window.history.pushState({},document.title,"/")
-    window.location.reload()
+    // window.location.reload()
   }
     })
     .catch((error) => {
@@ -307,7 +307,7 @@ function registerUser(params){
 }
 
 
-
+console.log(userId);
 // console.log(userId);
 function checkUserReg(){
   if (!userId) {

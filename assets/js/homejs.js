@@ -442,7 +442,7 @@ function registerUser(params){
       localStorage.setItem("GBWebUserId",data)
       window.history.pushState({},document.title,"/")
       document.getElementsByClassName("news-latter")[0].classList.add("hid")
-      window.location.reload()
+    //   window.location.reload()
     }
       })
       .catch((error) => {
@@ -481,5 +481,5 @@ fetch(`${apiUrl}/user/user/${userId}`)
   });
 
 
-
+console.log(userId);
 
