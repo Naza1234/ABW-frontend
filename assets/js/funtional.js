@@ -294,9 +294,11 @@ function registerUser(params){
     .then((data) => {
 
   //   console.log(data);
+  if (data != "User not found") {
     localStorage.setItem("GBWebUserId",data)
     window.history.pushState({},document.title,"/")
     window.location.reload()
+  }
     })
     .catch((error) => {
       // Handle any errors

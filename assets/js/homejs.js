@@ -438,10 +438,12 @@ function registerUser(params){
       .then((data) => {
 
     //   console.log(data);
+    if(data != "User not found"){
       localStorage.setItem("GBWebUserId",data)
       window.history.pushState({},document.title,"/")
       document.getElementsByClassName("news-latter")[0].classList.add("hid")
       window.location.reload()
+    }
       })
       .catch((error) => {
         // Handle any errors
